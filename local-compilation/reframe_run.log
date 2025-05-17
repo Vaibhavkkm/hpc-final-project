@@ -1,0 +1,600 @@
+[2025-05-18T01:21:10] debug: reframe: Initializing runtime
+[2025-05-18T01:21:10] debug2: reframe: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:10] debug: reframe: Initializing system partition 'batch'
+[2025-05-18T01:21:10] debug2: reframe: Selecting subconfig for 'aion'
+[2025-05-18T01:21:10] debug: reframe: Initializing system 'aion'
+[2025-05-18T01:21:10] debug: reframe: Initializing modules system 'lmod'
+[2025-05-18T01:21:10] debug: reframe: [CMD] '/usr/share/lmod/lmod/libexec/lmod --version'
+[2025-05-18T01:21:10] debug: reframe: [CMD] '/usr/share/lmod/lmod/libexec/lmod python'
+[2025-05-18T01:21:10] debug: reframe: detecting topology info for aion:batch
+[2025-05-18T01:21:10] debug: reframe: > no topology file found; auto-detecting...
+[2025-05-18T01:21:10] debug: reframe: > device auto-detection is not supported
+[2025-05-18T01:21:10] debug: reframe: [ReFrame Environment]
+  RFM_AUTODETECT_FQDN=<not set>
+  RFM_AUTODETECT_METHOD=<not set>
+  RFM_AUTODETECT_METHODS=<not set>
+  RFM_AUTODETECT_XTHOSTNAME=<not set>
+  RFM_CHECK_SEARCH_PATH=<not set>
+  RFM_CHECK_SEARCH_RECURSIVE=<not set>
+  RFM_CLEAN_STAGEDIR=<not set>
+  RFM_COLORIZE=<not set>
+  RFM_COMPRESS_REPORT=<not set>
+  RFM_CONFIG_FILES=<not set>
+  RFM_CONFIG_PATH=<not set>
+  RFM_DUMP_PIPELINE_PROGRESS=<not set>
+  RFM_ENABLE_RESULTS_STORAGE=<not set>
+  RFM_FLEX_ALLOC_STRICT=<not set>
+  RFM_GENERATE_FILE_REPORTS=<not set>
+  RFM_GIT_TIMEOUT=<not set>
+  RFM_HTTPJSON_URL=<not set>
+  RFM_IGNORE_REQNODENOTAVAIL=<not set>
+  RFM_INSTALL_PREFIX=/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/lib/python3.11/site-packages
+  RFM_KEEP_STAGE_FILES=<not set>
+  RFM_MODULE_MAPPINGS=<not set>
+  RFM_MODULE_MAP_FILE=<not set>
+  RFM_NON_DEFAULT_CRAYPE=<not set>
+  RFM_OUTPUT_DIR=<not set>
+  RFM_PERFLOG_DIR=<not set>
+  RFM_PERF_INFO_LEVEL=<not set>
+  RFM_PERF_REPORT_SPEC=<not set>
+  RFM_PIPELINE_TIMEOUT=<not set>
+  RFM_PREFIX=<not set>
+  RFM_PURGE_ENVIRONMENT=1
+  RFM_REMOTE_DETECT=<not set>
+  RFM_REMOTE_WORKDIR=<not set>
+  RFM_REPORT_FILE=<not set>
+  RFM_REPORT_JUNIT=<not set>
+  RFM_RESOLVE_MODULE_CONFLICTS=<not set>
+  RFM_SAVE_LOG_FILES=<not set>
+  RFM_SCHED_ACCESS_IN_SUBMIT=<not set>
+  RFM_SQLITE_CONN_TIMEOUT=<not set>
+  RFM_SQLITE_DB_FILE=<not set>
+  RFM_SQLITE_DB_FILE_MODE=<not set>
+  RFM_STAGE_DIR=<not set>
+  RFM_SYSLOG_ADDRESS=<not set>
+  RFM_SYSTEM=<not set>
+  RFM_TABLE_FORMAT=<not set>
+  RFM_TIMESTAMP_DIRS=<not set>
+  RFM_TRAP_JOB_ERRORS=<not set>
+  RFM_UNLOAD_MODULES=<not set>
+  RFM_USER_MODULES=<not set>
+  RFM_USE_LOGIN_SHELL=<not set>
+  RFM_VERBOSE=<not set>
+[2025-05-18T01:21:10] info: reframe: [ReFrame Setup]
+[2025-05-18T01:21:10] info: reframe:   version:           4.7.4
+[2025-05-18T01:21:10] info: reframe:   command:           '/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/bin/reframe -C reframe_config.py -c osu_benchmarks.py -r'
+[2025-05-18T01:21:10] info: reframe:   launched by:       vmangroliya@aion-0094
+[2025-05-18T01:21:10] info: reframe:   working directory: '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation'
+[2025-05-18T01:21:10] info: reframe:   settings files:    '<builtin>', 'reframe_config.py'
+[2025-05-18T01:21:10] info: reframe:   selected system:   'aion'
+[2025-05-18T01:21:10] info: reframe:   check search path: '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/osu_benchmarks.py'
+[2025-05-18T01:21:10] info: reframe:   stage directory:   '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage'
+[2025-05-18T01:21:10] info: reframe:   output directory:  '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output'
+[2025-05-18T01:21:10] info: reframe:   log files:         '/tmp/rfm-ggd_xzqy.log'
+[2025-05-18T01:21:10] info: reframe:   results database:  '/home/users/vmangroliya/.reframe/reports/results.db'
+[2025-05-18T01:21:10] info: reframe: 
+[2025-05-18T01:21:10] debug: reframe: Looking for tests in '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/osu_benchmarks.py'
+[2025-05-18T01:21:10] debug: reframe: Validating '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/osu_benchmarks.py': OK
+[2025-05-18T01:21:10] debug: reframe:   > Loaded 8 test(s)
+[2025-05-18T01:21:10] verbose: reframe: Loaded 8 test(s)
+[2025-05-18T01:21:10] verbose: reframe: Generated 8 test case(s)
+[2025-05-18T01:21:10] verbose: reframe: Filtering test cases(s) by name: 8 remaining
+[2025-05-18T01:21:10] verbose: reframe: Filtering test cases(s) by tags: 8 remaining
+[2025-05-18T01:21:10] verbose: reframe: Filtering test cases(s) by other attributes: 8 remaining
+[2025-05-18T01:21:10] debug: reframe: Building and validating the full test DAG
+[2025-05-18T01:21:10] debug: reframe: Full test DAG:
+[2025-05-18T01:21:10] debug: reframe:   OSUBandwidthTestInterNode @aion:batch+foss-2023b -> []
+  OSUBandwidthTestDiffSocket @aion:batch+foss-2023b -> []
+  OSUBandwidthTestSameSocketDiffNuma @aion:batch+foss-2023b -> []
+  OSUBandwidthTestSameNuma @aion:batch+foss-2023b -> []
+  OSULatencyTestInterNode @aion:batch+foss-2023b -> []
+  OSULatencyTestDiffSocket @aion:batch+foss-2023b -> []
+  OSULatencyTestSameSocketDiffNuma @aion:batch+foss-2023b -> []
+  OSULatencyTestSameNuma @aion:batch+foss-2023b -> []
+[2025-05-18T01:21:10] verbose: reframe: Final number of test cases: 8
+[2025-05-18T01:21:10] debug: reframe: [CMD] '/usr/share/lmod/lmod/libexec/lmod python --force purge'
+[2025-05-18T01:21:11] debug: reframe: Loading environment for current system
+[2025-05-18T01:21:11] debug: reframe: (Un)using module paths from command line
+[2025-05-18T01:21:11] debug: reframe: Loading user modules from command line
+[2025-05-18T01:21:11] info: reframe: [==========] Running 8 check(s)
+[2025-05-18T01:21:11] info: reframe: [==========] Started on Sun May 18 01:21:11 2025+0200
+[2025-05-18T01:21:11] info: reframe: 
+[2025-05-18T01:21:11] info: reframe: [----------] start processing checks
+[2025-05-18T01:21:11] debug2: reframe: Added OSUBandwidthTestInterNode on aion:batch using foss-2023b
+[2025-05-18T01:21:11] debug2: reframe: Added OSUBandwidthTestDiffSocket on aion:batch using foss-2023b
+[2025-05-18T01:21:11] debug2: reframe: Added OSUBandwidthTestSameSocketDiffNuma on aion:batch using foss-2023b
+[2025-05-18T01:21:11] debug2: reframe: Added OSUBandwidthTestSameNuma on aion:batch using foss-2023b
+[2025-05-18T01:21:11] debug2: reframe: Added OSULatencyTestInterNode on aion:batch using foss-2023b
+[2025-05-18T01:21:11] debug2: reframe: Added OSULatencyTestDiffSocket on aion:batch using foss-2023b
+[2025-05-18T01:21:11] debug2: reframe: Added OSULatencyTestSameSocketDiffNuma on aion:batch using foss-2023b
+[2025-05-18T01:21:11] debug2: reframe: Added OSULatencyTestSameNuma on aion:batch using foss-2023b
+[2025-05-18T01:21:11] debug2: reframe: Current tests: 8
+[2025-05-18T01:21:11] info: reframe: [ [32mRUN     [0m ] OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a: Entering stage: setup
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Setting up test paths
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Created stage directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage/aion/batch/foss-2023b/OSUBandwidthTestInterNode' [clean_stagedir: True]
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Created output directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output/aion/batch/foss-2023b/OSUBandwidthTestInterNode'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: [CMD] 'srun --version'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Setting up <class 'type'> job for test 'OSUBandwidthTestInterNode' (scheduler: 'slurm', launcher: 'srun')
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: compile_wait
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] info: reframe: [ [32mRUN     [0m ] OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546: Entering stage: setup
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestDiffSocket /7b62b546: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Setting up test paths
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Created stage directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage/aion/batch/foss-2023b/OSUBandwidthTestDiffSocket' [clean_stagedir: True]
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Created output directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output/aion/batch/foss-2023b/OSUBandwidthTestDiffSocket'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: [CMD] 'srun --version'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Setting up <class 'type'> job for test 'OSUBandwidthTestDiffSocket' (scheduler: 'slurm', launcher: 'srun')
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: compile_wait
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] info: reframe: [ [32mRUN     [0m ] OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd: Entering stage: setup
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Setting up test paths
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Created stage directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage/aion/batch/foss-2023b/OSUBandwidthTestSameSocketDiffNuma' [clean_stagedir: True]
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Created output directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output/aion/batch/foss-2023b/OSUBandwidthTestSameSocketDiffNuma'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: [CMD] 'srun --version'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Setting up <class 'type'> job for test 'OSUBandwidthTestSameSocketDiffNuma' (scheduler: 'slurm', launcher: 'srun')
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: compile_wait
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] info: reframe: [ [32mRUN     [0m ] OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28: Entering stage: setup
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameNuma /d4047a28: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Setting up test paths
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Created stage directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage/aion/batch/foss-2023b/OSUBandwidthTestSameNuma' [clean_stagedir: True]
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Created output directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output/aion/batch/foss-2023b/OSUBandwidthTestSameNuma'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: [CMD] 'srun --version'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Setting up <class 'type'> job for test 'OSUBandwidthTestSameNuma' (scheduler: 'slurm', launcher: 'srun')
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: compile_wait
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] info: reframe: [ [32mRUN     [0m ] OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453: Entering stage: setup
+[2025-05-18T01:21:11] debug2: OSULatencyTestInterNode /b21c5453: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Setting up test paths
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Created stage directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage/aion/batch/foss-2023b/OSULatencyTestInterNode' [clean_stagedir: True]
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Created output directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output/aion/batch/foss-2023b/OSULatencyTestInterNode'
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: [CMD] 'srun --version'
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Setting up <class 'type'> job for test 'OSULatencyTestInterNode' (scheduler: 'slurm', launcher: 'srun')
+[2025-05-18T01:21:11] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: compile_wait
+[2025-05-18T01:21:11] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] info: reframe: [ [32mRUN     [0m ] OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8: Entering stage: setup
+[2025-05-18T01:21:11] debug2: OSULatencyTestDiffSocket /0072bae8: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Setting up test paths
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Created stage directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage/aion/batch/foss-2023b/OSULatencyTestDiffSocket' [clean_stagedir: True]
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Created output directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output/aion/batch/foss-2023b/OSULatencyTestDiffSocket'
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: [CMD] 'srun --version'
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Setting up <class 'type'> job for test 'OSULatencyTestDiffSocket' (scheduler: 'slurm', launcher: 'srun')
+[2025-05-18T01:21:11] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: compile_wait
+[2025-05-18T01:21:11] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] info: reframe: [ [32mRUN     [0m ] OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5: Entering stage: setup
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Setting up test paths
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Created stage directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage/aion/batch/foss-2023b/OSULatencyTestSameSocketDiffNuma' [clean_stagedir: True]
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Created output directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output/aion/batch/foss-2023b/OSULatencyTestSameSocketDiffNuma'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: [CMD] 'srun --version'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Setting up <class 'type'> job for test 'OSULatencyTestSameSocketDiffNuma' (scheduler: 'slurm', launcher: 'srun')
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: compile_wait
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] info: reframe: [ [32mRUN     [0m ] OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9: Entering stage: setup
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameNuma /922447d9: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Setting up test paths
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Created stage directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/stage/aion/batch/foss-2023b/OSULatencyTestSameNuma' [clean_stagedir: True]
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Created output directory '/mnt/aiongpfs/users/vmangroliya/reframe-tests/osu_benchmarks/local-compilation/output/aion/batch/foss-2023b/OSULatencyTestSameNuma'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: [CMD] 'srun --version'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Setting up <class 'type'> job for test 'OSULatencyTestSameNuma' (scheduler: 'slurm', launcher: 'srun')
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: compile
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: compile_wait
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:11] debug2: reframe: Bumped 8 test(s)
+[2025-05-18T01:21:11] debug2: reframe: Current tests: 8
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:11] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Generating the run script
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python show env/release/2023b'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load env/release/2023b'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python show toolchain/foss/2023b'
+[2025-05-18T01:21:11] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load toolchain/foss/2023b'
+[2025-05-18T01:21:12] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: [CMD] 'sbatch rfm_job.sh'
+[2025-05-18T01:21:14] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Spawned run job (id=8094079)
+[2025-05-18T01:21:14] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:14] debug2: reframe: Bumped 1 test(s)
+[2025-05-18T01:21:14] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094079 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:14] debug2: reframe: [S] slurm: Job state not matched (stdout follows)
+JobID|State|ExitCode|End|NodeList
+
+[2025-05-18T01:21:14] debug2: reframe: Current tests: 8
+[2025-05-18T01:21:14] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:14] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:14] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:14] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:14] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:14] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Generating the run script
+[2025-05-18T01:21:14] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load env/release/2023b'
+[2025-05-18T01:21:14] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load toolchain/foss/2023b'
+[2025-05-18T01:21:15] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: [CMD] 'sbatch rfm_job.sh'
+[2025-05-18T01:21:17] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Spawned run job (id=8094080)
+[2025-05-18T01:21:17] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:17] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:17] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:17] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Generating the run script
+[2025-05-18T01:21:17] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load env/release/2023b'
+[2025-05-18T01:21:17] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load toolchain/foss/2023b'
+[2025-05-18T01:21:18] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: [CMD] 'sbatch rfm_job.sh'
+[2025-05-18T01:21:20] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Spawned run job (id=8094081)
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:20] debug2: reframe: Bumped 2 test(s)
+[2025-05-18T01:21:20] debug2: reframe: Poll rate control: sleeping for 0.1s (current poll rate: 1398101.3333333333 polls/s)
+[2025-05-18T01:21:20] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094079,8094080,8094081 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:20] debug2: reframe: Current tests: 8
+[2025-05-18T01:21:20] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:20] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: run_wait
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:20] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:20] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:20] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:20] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:20] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Generating the run script
+[2025-05-18T01:21:20] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load env/release/2023b'
+[2025-05-18T01:21:20] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load toolchain/foss/2023b'
+[2025-05-18T01:21:21] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: [CMD] 'sbatch rfm_job.sh'
+[2025-05-18T01:21:23] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Spawned run job (id=8094082)
+[2025-05-18T01:21:23] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:23] debug2: reframe: Bumped 2 test(s)
+[2025-05-18T01:21:23] debug2: reframe: Poll rate control: sleeping for 0.1s (current poll rate: 0.6172554696143654 polls/s)
+[2025-05-18T01:21:23] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094080,8094081,8094082 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:23] debug2: reframe: Current tests: 8
+[2025-05-18T01:21:23] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: sanity
+[2025-05-18T01:21:23] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:23] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:23] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: performance
+[2025-05-18T01:21:23] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:23] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:23] info: reframe: [ [32m      OK[0m ] (1/8) OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b
+[2025-05-18T01:21:23] verbose: reframe: ==> setup: 0.031s compile: 0.023s run: 12.512s sanity: 0.013s performance: 0.012s total: 12.967s
+[2025-05-18T01:21:23] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:24] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:24] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:24] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: run_wait
+[2025-05-18T01:21:24] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:24] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:24] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:24] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:24] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:24] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:24] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:24] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:24] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:24] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:24] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Generating the run script
+[2025-05-18T01:21:24] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load env/release/2023b'
+[2025-05-18T01:21:24] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load toolchain/foss/2023b'
+[2025-05-18T01:21:24] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: [CMD] 'sbatch rfm_job.sh'
+[2025-05-18T01:21:26] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Spawned run job (id=8094083)
+[2025-05-18T01:21:26] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:26] debug2: reframe: Bumped 3 test(s)
+[2025-05-18T01:21:27] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Entering stage: cleanup
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:27] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Copying test files to output directory
+[2025-05-18T01:21:27] debug: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Removing stage directory
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestInterNode /80ae6e3a @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:27] debug2: reframe: Poll rate control: sleeping for 0.1s (current poll rate: 0.46263478289323956 polls/s)
+[2025-05-18T01:21:27] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094081,8094082,8094083 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:27] debug2: reframe: Current tests: 7
+[2025-05-18T01:21:27] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: sanity
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:27] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: performance
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:27] info: reframe: [ [32m      OK[0m ] (2/8) OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b
+[2025-05-18T01:21:27] verbose: reframe: ==> setup: 0.025s compile: 0.023s run: 12.600s sanity: 0.015s performance: 0.012s total: 16.153s
+[2025-05-18T01:21:27] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:27] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: run_wait
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:27] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:27] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:27] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:27] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:27] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:27] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:27] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:27] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Generating the run script
+[2025-05-18T01:21:27] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load env/release/2023b'
+[2025-05-18T01:21:27] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load toolchain/foss/2023b'
+[2025-05-18T01:21:27] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: [CMD] 'sbatch rfm_job.sh'
+[2025-05-18T01:21:30] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Spawned run job (id=8094084)
+[2025-05-18T01:21:30] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] debug2: reframe: Bumped 3 test(s)
+[2025-05-18T01:21:30] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Entering stage: cleanup
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Copying test files to output directory
+[2025-05-18T01:21:30] debug: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Removing stage directory
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestDiffSocket /7b62b546 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] debug2: reframe: Poll rate control: sleeping for 0.1s (current poll rate: 0.4113821000259866 polls/s)
+[2025-05-18T01:21:30] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094082,8094083,8094084 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:30] debug2: reframe: Current tests: 6
+[2025-05-18T01:21:30] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: sanity
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: performance
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] info: reframe: [ [32m      OK[0m ] (3/8) OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b
+[2025-05-18T01:21:30] verbose: reframe: ==> setup: 0.025s compile: 0.024s run: 12.888s sanity: 0.015s performance: 0.013s total: 19.335s
+[2025-05-18T01:21:30] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: run_wait
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:30] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: run_wait
+[2025-05-18T01:21:30] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:30] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:30] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:30] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:30] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Generating the run script
+[2025-05-18T01:21:30] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load env/release/2023b'
+[2025-05-18T01:21:30] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load toolchain/foss/2023b'
+[2025-05-18T01:21:30] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: [CMD] 'sbatch rfm_job.sh'
+[2025-05-18T01:21:33] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Spawned run job (id=8094085)
+[2025-05-18T01:21:33] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] debug2: reframe: Bumped 4 test(s)
+[2025-05-18T01:21:33] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Entering stage: cleanup
+[2025-05-18T01:21:33] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Copying test files to output directory
+[2025-05-18T01:21:33] debug: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Removing stage directory
+[2025-05-18T01:21:33] debug2: OSUBandwidthTestSameSocketDiffNuma /7d3ed5cd @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] debug2: reframe: Poll rate control: sleeping for 0.1s (current poll rate: 0.38372244061182037 polls/s)
+[2025-05-18T01:21:33] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094084,8094085 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:33] debug2: reframe: Current tests: 5
+[2025-05-18T01:21:33] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: sanity
+[2025-05-18T01:21:33] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: performance
+[2025-05-18T01:21:33] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] info: reframe: [ [32m      OK[0m ] (4/8) OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b
+[2025-05-18T01:21:33] verbose: reframe: ==> setup: 0.026s compile: 0.024s run: 13.011s sanity: 0.015s performance: 0.012s total: 22.586s
+[2025-05-18T01:21:33] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: sanity
+[2025-05-18T01:21:33] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: performance
+[2025-05-18T01:21:33] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] info: reframe: [ [32m      OK[0m ] (5/8) OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b
+[2025-05-18T01:21:33] verbose: reframe: ==> setup: 0.026s compile: 0.024s run: 9.770s sanity: 0.013s performance: 0.012s total: 22.572s
+[2025-05-18T01:21:33] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:33] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: run_wait
+[2025-05-18T01:21:33] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:33] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:33] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:33] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:33] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Generating the run script
+[2025-05-18T01:21:33] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load env/release/2023b'
+[2025-05-18T01:21:33] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: [CMD] '/usr/share/lmod/lmod/libexec/lmod python load toolchain/foss/2023b'
+[2025-05-18T01:21:34] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: [CMD] 'sbatch rfm_job.sh'
+[2025-05-18T01:21:36] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Spawned run job (id=8094086)
+[2025-05-18T01:21:36] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:36] debug2: reframe: Bumped 4 test(s)
+[2025-05-18T01:21:36] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Entering stage: cleanup
+[2025-05-18T01:21:36] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:36] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Copying test files to output directory
+[2025-05-18T01:21:36] debug: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Removing stage directory
+[2025-05-18T01:21:36] debug2: OSUBandwidthTestSameNuma /d4047a28 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:36] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Entering stage: cleanup
+[2025-05-18T01:21:36] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:36] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Copying test files to output directory
+[2025-05-18T01:21:36] debug: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Removing stage directory
+[2025-05-18T01:21:36] debug2: OSULatencyTestInterNode /b21c5453 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:36] debug2: reframe: Poll rate control: sleeping for 0.1s (current poll rate: 0.3673700744807672 polls/s)
+[2025-05-18T01:21:36] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094085,8094086 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:37] debug2: reframe: Current tests: 3
+[2025-05-18T01:21:37] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: sanity
+[2025-05-18T01:21:37] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: performance
+[2025-05-18T01:21:37] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] info: reframe: [ [32m      OK[0m ] (6/8) OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b
+[2025-05-18T01:21:37] verbose: reframe: ==> setup: 0.028s compile: 0.024s run: 9.784s sanity: 0.015s performance: 0.012s total: 25.775s
+[2025-05-18T01:21:37] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: run_wait
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug2: reframe: Bumped 2 test(s)
+[2025-05-18T01:21:37] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Entering stage: cleanup
+[2025-05-18T01:21:37] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Copying test files to output directory
+[2025-05-18T01:21:37] debug: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Removing stage directory
+[2025-05-18T01:21:37] debug2: OSULatencyTestDiffSocket /0072bae8 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug2: reframe: Poll rate control: sleeping for 0.1s (current poll rate: 0.4213562266922208 polls/s)
+[2025-05-18T01:21:37] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094086 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:37] debug2: reframe: Current tests: 2
+[2025-05-18T01:21:37] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: sanity
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: performance
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] info: reframe: [ [32m      OK[0m ] (7/8) OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b
+[2025-05-18T01:21:37] verbose: reframe: ==> setup: 0.026s compile: 0.024s run: 6.835s sanity: 0.014s performance: 0.012s total: 26.036s
+[2025-05-18T01:21:37] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug2: reframe: Bumped 1 test(s)
+[2025-05-18T01:21:37] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Entering stage: cleanup
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Copying test files to output directory
+[2025-05-18T01:21:37] debug: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Removing stage directory
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameSocketDiffNuma /4ed428e5 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug2: reframe: Poll rate control: sleeping for 0.11000000000000001s (current poll rate: 0.4735548348593686 polls/s)
+[2025-05-18T01:21:37] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094086 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:37] debug2: reframe: Current tests: 1
+[2025-05-18T01:21:37] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug2: reframe: Bumped 0 test(s)
+[2025-05-18T01:21:37] debug2: reframe: Poll rate control: sleeping for 0.12100000000000002s (current poll rate: 0.5263150439121784 polls/s)
+[2025-05-18T01:21:37] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094086 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:37] debug: reframe: [CMD] 'squeue -h -j 8094086 -o %r'
+[2025-05-18T01:21:37] debug2: reframe: Current tests: 1
+[2025-05-18T01:21:37] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:37] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:37] debug2: reframe: Bumped 0 test(s)
+[2025-05-18T01:21:37] debug2: reframe: Poll rate control: sleeping for 0.13310000000000002s (current poll rate: 0.5771828946673666 polls/s)
+[2025-05-18T01:21:38] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094086 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:38] debug2: reframe: Current tests: 1
+[2025-05-18T01:21:38] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:38] debug2: reframe: Bumped 0 test(s)
+[2025-05-18T01:21:38] debug2: reframe: Poll rate control: sleeping for 0.14641000000000004s (current poll rate: 0.6265360744022235 polls/s)
+[2025-05-18T01:21:38] debug: reframe: [CMD] 'sacct -S 2025-05-18 -P -j 8094086 -o jobid,state,exitcode,end,nodelist'
+[2025-05-18T01:21:38] debug2: reframe: Current tests: 1
+[2025-05-18T01:21:38] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: run
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:38] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: run_wait
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:38] debug2: reframe: Bumped 1 test(s)
+[2025-05-18T01:21:38] debug2: reframe: Poll rate control: sleeping for 0.1s (current poll rate: 0.6745086145183647 polls/s)
+[2025-05-18T01:21:38] debug2: reframe: Current tests: 1
+[2025-05-18T01:21:38] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: sanity
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:38] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: performance
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:38] info: reframe: [ [32m      OK[0m ] (8/8) OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b
+[2025-05-18T01:21:38] verbose: reframe: ==> setup: 0.026s compile: 0.023s run: 4.615s sanity: 0.014s performance: 0.012s total: 27.069s
+[2025-05-18T01:21:38] debug2: reframe: Bumped 1 test(s)
+[2025-05-18T01:21:38] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Entering stage: cleanup
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion:batch'
+[2025-05-18T01:21:38] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Copying test files to output directory
+[2025-05-18T01:21:38] debug: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Removing stage directory
+[2025-05-18T01:21:38] debug2: OSULatencyTestSameNuma /922447d9 @aion:batch+foss-2023b: Selecting subconfig for 'aion'
+[2025-05-18T01:21:38] info: reframe: [----------] all spawned checks have finished
+
+[2025-05-18T01:21:38] info: reframe: [ [32m PASSED [0m ] Ran 8/8 test case(s) from 8 check(s) (0 failure(s), 0 skipped, 0 aborted)
+[2025-05-18T01:21:38] info: reframe: [==========] Finished on Sun May 18 01:21:38 2025+0200
+[2025-05-18T01:21:38] info: reframe: Log file(s) saved in '/tmp/rfm-ggd_xzqy.log'
+[2025-05-18T01:21:38] debug: reframe: >>> profiler report [start] <<<
+[2025-05-18T01:21:38] debug: reframe: main: 27.901560 s
+[2025-05-18T01:21:38] debug: reframe:     test processing: 27.757506 s
+[2025-05-18T01:21:38] debug: reframe:         RegressionCheckLoader.load_all: 0.069501 s
+[2025-05-18T01:21:38] debug: reframe:             TestRegistry.instantiate_all: 0.046563 s
+[2025-05-18T01:21:38] debug: reframe:         generate_testcases: 0.000091 s
+[2025-05-18T01:21:38] debug: reframe:         main.<locals>._sort_testcases: 0.000011 s
+[2025-05-18T01:21:38] debug: reframe:         build_deps: 0.000114 s
+[2025-05-18T01:21:38] debug: reframe:         validate_deps: 0.000081 s
+[2025-05-18T01:21:38] debug: reframe:         toposort: 0.000155 s
+[2025-05-18T01:21:38] debug: reframe:         Runner.runall: 27.518844 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.setup: 0.242420 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.compile: 0.070801 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.compile_complete: 0.071115 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.compile_wait: 0.070955 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.run: 23.848315 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.run_complete: 0.277220 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.run_wait: 0.153011 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.sanity: 0.168214 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.performance: 0.150791 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.finalize: 0.026297 s
+[2025-05-18T01:21:38] debug: reframe:             RegressionTask.cleanup: 0.330239 s
+[2025-05-18T01:21:38] debug: reframe: >>> profiler report [ end ] <<<
