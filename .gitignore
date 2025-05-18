@@ -18,3 +18,8 @@ __pycache__/
 
 # ReFrame user config (not in repo, but noted for clarity)
 ~/.reframe/
+
+# Build and source directories
+omb-7.2-build/
+osu-micro-benchmarks-7.2/
+osu-micro-benchmarks-7.2.tar.gz
