@@ -13,3 +13,4 @@
    reframe -C ~/.reframe/settings.py -c tests/easybuild/latency_intranode_diff_sockets.py -r --system=aion --keep-stage-files
    reframe -C ~/.reframe/settings.py -c tests/easybuild/bandwidth_intranode_same_numa.py -r --system=aion --keep-stage-files
    reframe -C ~/.reframe/settings.py -c tests/easybuild/bandwidth_intranode_diff_numa.py -r --system=aion --keep-stage-files
+   reframe -C ~/.reframe/settings.py -c tests/easybuild/bandwidth_intranode_diff_sockets.py -r --system=aion --keep-stage-files
