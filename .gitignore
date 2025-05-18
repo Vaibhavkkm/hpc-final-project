@@ -1,0 +1,20 @@
+# ReFrame generated directories
+stage/
+output/
+
+# Log files
+*.log
+
+# Editor temporary files
+*.swp
+*.swo
+
+# Python cache files
+*.pyc
+__pycache__/
+
+# macOS system files
+.DS_Store
+
+# ReFrame user config (not in repo, but noted for clarity)
+~/.reframe/
