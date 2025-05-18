@@ -24,10 +24,10 @@
   "keep_files": [],
   "readonly_files": [],
   "tags": [
-    "easybuild",
     "same_numa",
     "latency",
-    "intranode"
+    "intranode",
+    "easybuild"
   ],
   "maintainers": [
     "Asal"
@@ -205,18 +205,18 @@
     "_stderr": "rfm_job.err",
     "_sched_flex_alloc_nodes": "idle",
     "_sched_access": [],
-    "_jobid": "8099974",
+    "_jobid": "8100082",
     "_exitcode": 0,
     "_state": "COMPLETED",
     "_nodelist": [
-      "aion-0002"
+      "aion-0005"
     ],
-    "_submit_time": 1747568718.5424976,
-    "_completion_time": 1747568720.0,
+    "_submit_time": 1747571614.370371,
+    "_completion_time": 1747571616.0,
     "_exception": null,
     "_is_array": false,
     "_is_cancelling": false,
-    "_nodespec": "aion-0002",
+    "_nodespec": "aion-0005",
     "_scheduler": null,
     "launcher": null
   },
