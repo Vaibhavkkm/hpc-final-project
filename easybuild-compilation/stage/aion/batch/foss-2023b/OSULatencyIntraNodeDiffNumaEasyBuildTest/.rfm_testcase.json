@@ -1,0 +1,250 @@
+{
+  "__rfm_class__": "OSULatencyIntraNodeDiffNumaEasyBuildTest",
+  "__rfm_file__": "/mnt/aiongpfs/users/vmangroliya/temp_folder/hpc-final-project/easybuild-compilation_1/tests/easybuild/latency_intranode_diff_numa.py",
+  "_RegressionTest__deferred_rfm_init": null,
+  "valid_prog_environs": [
+    "foss-2023b"
+  ],
+  "valid_systems": [
+    "aion"
+  ],
+  "descr": "OSU Latency Test with EasyBuild (Intra-Node, Same Socket, Different NUMA Nodes)",
+  "sourcepath": "",
+  "sourcesdir": null,
+  "build_system": null,
+  "prebuild_cmds": [],
+  "postbuild_cmds": [],
+  "executable": "osu_latency",
+  "executable_opts": [
+    "-m 8192:8192"
+  ],
+  "container_platform": "_NoRuntime",
+  "prerun_cmds": [],
+  "postrun_cmds": [],
+  "keep_files": [],
+  "readonly_files": [],
+  "tags": [
+    "easybuild",
+    "latency",
+    "diff_numa",
+    "intranode"
+  ],
+  "maintainers": [
+    "Asal"
+  ],
+  "strict_check": true,
+  "num_tasks": 2,
+  "num_tasks_per_node": 2,
+  "num_gpus_per_node": null,
+  "num_cpus_per_task": null,
+  "num_tasks_per_core": null,
+  "num_tasks_per_socket": null,
+  "use_multithreading": null,
+  "max_pending_time": null,
+  "exclusive_access": false,
+  "local": false,
+  "reference": {
+    "aion": {
+      "latency": [
+        2.3,
+        -0.1,
+        0.1,
+        "us"
+      ]
+    }
+  },
+  "require_reference": false,
+  "perf_variables": {},
+  "modules": [
+    "perf/OSU-Micro-Benchmarks/7.2-foss-2023b"
+  ],
+  "env_vars": {},
+  "variables": {},
+  "time_limit": null,
+  "build_time_limit": null,
+  "extra_resources": {},
+  "build_locally": true,
+  "ci_extras": {},
+  "_rfm_dry_run": false,
+  "_rfm_variant_num": 0,
+  "_rfm_param_variant": 0,
+  "_rfm_fixt_variant": 0,
+  "_rfm_unique_name": "OSULatencyIntraNodeDiffNumaEasyBuildTest",
+  "_perfvalues": {},
+  "_prefix": "/mnt/aiongpfs/users/vmangroliya/temp_folder/hpc-final-project/easybuild-compilation_1/tests/easybuild",
+  "_current_partition": {
+    "__rfm_class__": "SystemPartition",
+    "__rfm_file__": "/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/lib/python3.11/site-packages/reframe/core/systems.py",
+    "_parent_system": "aion",
+    "_name": "batch",
+    "_sched_type": null,
+    "_scheduler": null,
+    "_launcher_type": null,
+    "_descr": "",
+    "_access": [],
+    "_container_runtime": null,
+    "_container_environs": {},
+    "_local_env": {
+      "__rfm_class__": "Environment",
+      "__rfm_file__": "/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/lib/python3.11/site-packages/reframe/core/environments.py",
+      "_name": "__rfm_env_batch",
+      "_modules": [],
+      "_module_names": [],
+      "_env_vars": {},
+      "_extras": {},
+      "_features": [],
+      "_prepare_cmds": []
+    },
+    "_environs": [
+      {
+        "__rfm_class__": "ProgEnvironment",
+        "__rfm_file__": "/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/lib/python3.11/site-packages/reframe/core/environments.py",
+        "_name": "foss-2023b",
+        "_modules": [
+          {
+            "name": "env/release/2023b",
+            "collection": false,
+            "path": null
+          },
+          {
+            "name": "toolchain/foss/2023b",
+            "collection": false,
+            "path": null
+          }
+        ],
+        "_module_names": [
+          "env/release/2023b",
+          "toolchain/foss/2023b"
+        ],
+        "_env_vars": {},
+        "_extras": {},
+        "_features": [],
+        "_prepare_cmds": [],
+        "_cc": "mpicc",
+        "_cxx": "mpicxx",
+        "_ftn": "mpif90",
+        "_nvcc": "nvcc",
+        "_cppflags": [],
+        "_cflags": [],
+        "_cxxflags": [],
+        "_fflags": [],
+        "_ldflags": [],
+        "_resources": {}
+      }
+    ],
+    "_max_jobs": 8,
+    "_prepare_cmds": [],
+    "_resources": {},
+    "_processor": {
+      "__rfm_class__": "ProcessorInfo",
+      "__rfm_file__": "/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/lib/python3.11/site-packages/reframe/core/systems.py"
+    },
+    "_devices": [],
+    "_extras": {
+      "scheduler": "slurm",
+      "launcher": "srun"
+    },
+    "_features": [],
+    "_time_limit": null
+  },
+  "_current_environ": {
+    "__rfm_class__": "ProgEnvironment",
+    "__rfm_file__": "/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/lib/python3.11/site-packages/reframe/core/environments.py",
+    "_name": "foss-2023b",
+    "_modules": [
+      {
+        "name": "env/release/2023b",
+        "collection": false,
+        "path": null
+      },
+      {
+        "name": "toolchain/foss/2023b",
+        "collection": false,
+        "path": null
+      }
+    ],
+    "_module_names": [
+      "env/release/2023b",
+      "toolchain/foss/2023b"
+    ],
+    "_env_vars": {},
+    "_extras": {},
+    "_features": [],
+    "_prepare_cmds": [],
+    "_cc": "mpicc",
+    "_cxx": "mpicxx",
+    "_ftn": "mpif90",
+    "_nvcc": "nvcc",
+    "_cppflags": [],
+    "_cflags": [],
+    "_cxxflags": [],
+    "_fflags": [],
+    "_ldflags": [],
+    "_resources": {}
+  },
+  "_job": {
+    "__rfm_class__": "_SlurmJob",
+    "__rfm_file__": "/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/lib/python3.11/site-packages/reframe/core/schedulers/slurm.py",
+    "num_tasks": 2,
+    "num_tasks_per_node": 2,
+    "num_tasks_per_core": null,
+    "num_tasks_per_socket": null,
+    "num_cpus_per_task": null,
+    "use_smt": null,
+    "exclusive_access": false,
+    "time_limit": null,
+    "max_pending_time": null,
+    "options": [],
+    "pin_nodes": [],
+    "_rfm_unique_name": "_SlurmJob",
+    "_cli_options": [],
+    "_name": "rfm_OSULatencyIntraNodeDiffNumaEasyBuildTest",
+    "_workdir": "/mnt/aiongpfs/users/vmangroliya/temp_folder/hpc-final-project/easybuild-compilation_1/stage/aion/batch/foss-2023b/OSULatencyIntraNodeDiffNumaEasyBuildTest",
+    "_script_filename": "rfm_job.sh",
+    "_stdout": "rfm_job.out",
+    "_stderr": "rfm_job.err",
+    "_sched_flex_alloc_nodes": "idle",
+    "_sched_access": [],
+    "_jobid": "8235369",
+    "_exitcode": 0,
+    "_state": "COMPLETED",
+    "_nodelist": [
+      "aion-0336"
+    ],
+    "_submit_time": 1747849224.7352114,
+    "_completion_time": 1747849230.0,
+    "_exception": null,
+    "_is_array": false,
+    "_is_cancelling": false,
+    "_nodespec": "aion-0336",
+    "_scheduler": null,
+    "launcher": null
+  },
+  "_stagedir": "/mnt/aiongpfs/users/vmangroliya/temp_folder/hpc-final-project/easybuild-compilation_1/stage/aion/batch/foss-2023b/OSULatencyIntraNodeDiffNumaEasyBuildTest",
+  "_outputdir": "/mnt/aiongpfs/users/vmangroliya/temp_folder/hpc-final-project/easybuild-compilation_1/output/aion/batch/foss-2023b/OSULatencyIntraNodeDiffNumaEasyBuildTest",
+  "_stdout": null,
+  "_stderr": null,
+  "_build_job": null,
+  "_compile_proc": null,
+  "_userdeps": [],
+  "_case": null,
+  "_cdt_environ": {
+    "__rfm_class__": "Environment",
+    "__rfm_file__": "/opt/apps/easybuild/systems/aion/rhel810-20250405/2023b/epyc/software/ReFrame/4.7.4-GCCcore-13.2.0/lib/python3.11/site-packages/reframe/core/environments.py",
+    "_name": "__rfm_cdt_environ",
+    "_modules": [],
+    "_module_names": [],
+    "_env_vars": {},
+    "_extras": {},
+    "_features": [],
+    "_prepare_cmds": []
+  },
+  "_disabled_hooks": [],
+  "sanity_patterns": true,
+  "performance_patterns": {
+    "latency": null
+  },
+  "_rfm_display_name": "OSULatencyIntraNodeDiffNumaEasyBuildTest",
+  "_rfm_name": "OSULatencyIntraNodeDiffNumaEasyBuildTest",
+  "_rfm_hashcode": "c303d800"
+}
