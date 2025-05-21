@@ -35,7 +35,7 @@ class osu_latency_same_core(BaseOsuTest):
 
     @performance_function('us')
     def latency(self):
-        return sn.extractsingle(r'^512\s+(\S+)', self.stdout, 1, float)
+        return sn.extractsingle(r'^8192\s+(\S+)', self.stdout, 1, float)
 
 
 @rfm.simple_test
@@ -54,7 +54,7 @@ class osu_latency_same_numa(BaseOsuTest):
 
     @performance_function('us')
     def latency(self):
-        return sn.extractsingle(r'^512\s+(\S+)', self.stdout, 1, float)
+        return sn.extractsingle(r'^8192\s+(\S+)', self.stdout, 1, float)
 
 
 @rfm.simple_test
@@ -72,7 +72,7 @@ class osu_latency_cross_numa(BaseOsuTest):
         return sn.assert_found(r'# OSU MPI Latency Test', self.stdout)
     @performance_function('us')
     def latency(self):
-        return sn.extractsingle(r'^512\s+(\S+)', self.stdout, 1, float)
+        return sn.extractsingle(r'^8192\s+(\S+)', self.stdout, 1, float)
 
 
 @rfm.simple_test
@@ -90,7 +90,7 @@ class osu_latency_inter_node(BaseOsuTest):
 
     @performance_function('us')
     def latency(self):
-        return sn.extractsingle(r'^512\s+(\S+)', self.stdout, 1, float)
+        return sn.extractsingle(r'^8192\s+(\S+)', self.stdout, 1, float)
 ####
 
 @rfm.simple_test
