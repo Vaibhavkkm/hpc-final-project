@@ -13,6 +13,21 @@ site_configuration = {
                     'environs': ['foss-2023b'],
                 }
             ]
+        },
+
+        {
+            'name': 'iris',
+            'descr': 'Iris Cluster',
+            'hostnames': ['iris'],
+            'modules_system': 'lmod',  # Specify Lmod as the module system
+            'partitions': [
+                {
+                    'name': 'batch',
+                    'scheduler': 'slurm',
+                    'launcher': 'srun',
+                    'environs': ['foss-2023b'],
+                }
+            ]
         }
     ],
     'environments': [
