@@ -4,7 +4,7 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class OSULatencyEasyBuildTest(rfm.RunOnlyRegressionTest):
     descr = 'OSU Latency Test with EasyBuild (Inter-Node)'
-    valid_systems = ['aion']
+    valid_systems = ['*']
     valid_prog_environs = ['foss-2023b']
     modules = ['perf/OSU-Micro-Benchmarks/7.2-foss-2023b']
     executable = 'osu_latency'
@@ -13,12 +13,12 @@ class OSULatencyEasyBuildTest(rfm.RunOnlyRegressionTest):
     num_tasks_per_node = 1  # Inter-node test
     pre_run = ['module use /home/users/vmangroliya/.local/easybuild/modules/all']
     reference = {
-        'aion': {
+        '*': {
             'latency': (3.9, -0.1, 0.1, 'us')  # Expected ~3.9 µs, ±10%
         }
     }
 
-    maintainers = ['Asal']
+    maintainers = ['VaibhavKKM']
     tags = {'latency', 'easybuild', 'internode'}
 
     def __init__(self):

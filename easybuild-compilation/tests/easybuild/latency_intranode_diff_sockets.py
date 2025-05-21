@@ -4,7 +4,7 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class OSULatencyIntraNodeDiffSocketsEasyBuildTest(rfm.RunOnlyRegressionTest):
     descr = 'OSU Latency Test with EasyBuild (Intra-Node, Different Sockets)'
-    valid_systems = ['aion']
+    valid_systems = ['*']
     valid_prog_environs = ['foss-2023b']
     modules = ['perf/OSU-Micro-Benchmarks/7.2-foss-2023b']
     executable = 'osu_latency'
@@ -16,12 +16,12 @@ class OSULatencyIntraNodeDiffSocketsEasyBuildTest(rfm.RunOnlyRegressionTest):
         'hwloc-bind socket:0.pu:0 socket:1.pu:0 -- srun'
     ]
     reference = {
-        'aion': {
+        '*': {
             'latency': (2.3, -0.1, 0.1, 'us')  # Expected ~2.3 µs, ±10%
         }
     }
 
-    maintainers = ['Asal']
+    maintainers = ['VaibhavKKM']
     tags = {'latency', 'easybuild', 'intranode', 'diff_sockets'}
 
     def __init__(self):

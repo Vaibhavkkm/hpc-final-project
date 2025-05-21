@@ -4,7 +4,7 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class OSUBandwidthIntraNodeSameNumaEasyBuildTest(rfm.RunOnlyRegressionTest):
     descr = 'OSU Bandwidth Test with EasyBuild (Intra-Node, Same NUMA Node)'
-    valid_systems = ['aion']
+    valid_systems = ['*']
     valid_prog_environs = ['foss-2023b']
     modules = ['perf/OSU-Micro-Benchmarks/7.2-foss-2023b']
     executable = 'osu_bw'
@@ -16,12 +16,12 @@ class OSUBandwidthIntraNodeSameNumaEasyBuildTest(rfm.RunOnlyRegressionTest):
         'hwloc-bind --cpubind pu:0 --membind numa:0 pu:1 --membind numa:0 -- srun'
     ]
     reference = {
-        'aion': {
+        '*': {
             'bandwidth': (12000, -0.1, 0.1, 'MB/s')  # Expected ~12,000 MB/s, adjust after run
         }
     }
 
-    maintainers = ['Asal']
+    maintainers = ['VaibhavKKM']
     tags = {'bandwidth', 'easybuild', 'intranode', 'same_numa'}
 
     def __init__(self):

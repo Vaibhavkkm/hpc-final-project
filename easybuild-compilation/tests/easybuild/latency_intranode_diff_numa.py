@@ -4,7 +4,7 @@ import reframe.utility.sanity as sn
 @rfm.simple_test
 class OSULatencyIntraNodeDiffNumaEasyBuildTest(rfm.RunOnlyRegressionTest):
     descr = 'OSU Latency Test with EasyBuild (Intra-Node, Same Socket, Different NUMA Nodes)'
-    valid_systems = ['aion']
+    valid_systems = ['iris']
     valid_prog_environs = ['foss-2023b']
     modules = ['perf/OSU-Micro-Benchmarks/7.2-foss-2023b']
     executable = 'osu_latency'
@@ -16,12 +16,12 @@ class OSULatencyIntraNodeDiffNumaEasyBuildTest(rfm.RunOnlyRegressionTest):
         'hwloc-bind --cpubind pu:0 --membind numa:0 pu:16 --membind numa:1 -- srun'
     ]
     reference = {
-        'aion': {
+        'iris': {
             'latency': (2.3, -0.1, 0.1, 'us')  # Expected ~2.3 µs, ±10%
         }
     }
 
-    maintainers = ['Asal']
+    maintainers = ['VaibhavKKM']
     tags = {'latency', 'easybuild', 'intranode', 'diff_numa'}
 
     def __init__(self):
