@@ -1,7 +1,3 @@
-Copyright (C) 2025 Vaibhav KKM
-
-This file is part of did-tesla-msft-fed-hike (https://github.com/Vaibhavkkm/hpc-final-project)
-
 # Performance Analysis Report: OSU Micro-Benchmarks on Aion Cluster
 
 ## Introduction
